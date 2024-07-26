@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariyan Haque</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            background: url('checkmark.png') no-repeat left center;
+            padding-left: 20px;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ariyan Haque</h1>
+        <p>Personal Details</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#works">My Works</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Ariyan Haque</p>
+            <p><strong>Date of Birth:</strong> 27-8-2009</p>
+            <p><strong>Goal:</strong> To be a successful businessman</p>
+            <p><strong>Mother's Name:</strong> Arefa Najneen</p>
+            <h3>Education</h3>
+            <p><strong>First School:</strong> <a href="https://g.co/kgs/gtmy4ZN" target="_blank">Shishuniketan (Class 1-4)</a></p>
+            <p><strong>High School:</strong> <a href="https://g.co/kgs/gtmy4ZN" target="_blank">Vidyaniketan (Class 5-7)</a></p>
+            <p><strong>Current School:</strong> <a href="https://g.co/kgs/FH2Wxeb" target="_blank">Sargachi Ramakrishna Mission High School</a></p>
+        </section>
+        <section id="works" class="section">
+            <h2>My Works</h2>
+            <ul>
+            <li>MS Word</li>
+            <li>MS Excel</li>
+            <li>Power Point</li>
+                <li>HTML Expert</li>
+                <li>Python Developer</li>
+                <li>Other Skills:
+                    <ul>
+                        <li>Singing</li>
+                        <li>Drawing</li>
+                        <li>Yoga</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p><strong>Email:</strong> <a href="mailto:mrariyanhacker@gmail.com">mrariyanhacker@gmail.com</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/ariyan_haque_the_boys?igsh=MWVybHZybHdodW10NQ%3D%3D&utm_source=qr" target="_blank">ariyan_haque_the_boys</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100085047961833&mibextid=LQQJ4d" target="_blank">Ariyan Haque</a></p>
+            <p><strong>Twitter/X:</strong> <a href="https://twitter.com/_Ariyan_Haque" target="_blank">@_Ariyan_Haque</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ariyan Haque. All rights reserved.</p>
+    </footer>
+</body>
+</html>
