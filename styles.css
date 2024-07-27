@@ -43,11 +43,14 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -92,7 +95,7 @@ p {
 }
 
 nav ul li a {
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 button {
