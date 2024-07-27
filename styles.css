@@ -14,6 +14,12 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white; /* Change heading color to white */
+}
+
 nav {
     background-color: #333;
     padding: 10px 0;
@@ -83,11 +89,6 @@ a:hover {
 
 p {
     line-height: 1.6;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
 }
 
 nav ul li a {
