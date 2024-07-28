@@ -38,6 +38,7 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -66,15 +67,9 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional Styles for a More Professional Look */
-
 h1, h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: white;
-}
-
-h2 {
-    color: #4CAF50; /* Green */
 }
 
 a {
@@ -111,6 +106,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
@@ -135,44 +131,63 @@ button:hover {
     color: #666;
 }
 
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 /* Thank You Page Styles */
 .thank-you-page {
     text-align: center;
     padding: 50px;
 }
 
-.thank-you-page h2 {
-    color: white;
+.thank-you-page h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
 }
 
 .thank-you-page p {
     font-size: 1.2em;
-    margin: 20px 0;
 }
 
-/* Buttons */
-button, .button {
+.thank-you-page a.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
     border-radius: 4px;
-    border: none;
+    transition: background-color 0.3s;
 }
 
-button:hover, .button:hover {
+.thank-you-page a.button:hover {
     background-color: #45a049;
 }
 
-/* Ensure visibility of buttons */
-.highlight-button {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    text-align: center;
+/* Media Queries */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
 }
