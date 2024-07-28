@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            window.location.href = 'thankyou.html';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,7 +19,7 @@
     <main>
         <section class="signup">
             <h2>Create Your Account</h2>
-            <form action="thanks.html" method="post">
+            <form onsubmit="handleFormSubmit(event)">
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
@@ -27,9 +33,6 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit">Sign Up</button>
-                <br> 
-                    <p>Already have an account</p><br>
-                    <a href="login.html">Login</a>
             </form>
         </section>
     </main>
