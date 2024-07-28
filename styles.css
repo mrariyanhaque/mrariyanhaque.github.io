@@ -19,6 +19,7 @@ nav {
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
 }
 
 nav ul {
@@ -69,7 +70,7 @@ footer {
 
 h1, h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #4CAF50; /* Green */
+    color: white;
 }
 
 a {
@@ -137,7 +138,7 @@ button:hover {
 }
 
 .thank-you-page h2 {
-    color: #4CAF50;
+    color: white;
 }
 
 .thank-you-page p {
