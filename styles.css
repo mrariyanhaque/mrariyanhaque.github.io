@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -13,12 +12,6 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: white; /* Change heading color to white */
 }
 
 nav {
@@ -60,37 +53,8 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker green */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+main section {
+    margin-bottom: 20px;
 }
 
 footer {
@@ -101,30 +65,14 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.input-group input,
-.input-group textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 /* Additional Styles for a More Professional Look */
 
 h1, h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: white; /* Change h1 color to white */
+}
+
+h2 {
     color: #4CAF50; /* Green */
 }
 
@@ -168,7 +116,6 @@ button:hover {
     background-color: #45a049; /* Darker green */
 }
 
-/* Card Styles */
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -185,26 +132,4 @@ button:hover {
 
 .card p {
     color: #666;
-}
-
-/* Thank You Page Styles */
-.thank-you {
-    text-align: center;
-    padding: 20px;
-}
-
-.thank-you-image {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-.thank-you h2 {
-    color: #4CAF50; /* Green */
-}
-
-.thank-you p {
-    font-size: 1.2em;
-    margin: 20px 0;
 }
