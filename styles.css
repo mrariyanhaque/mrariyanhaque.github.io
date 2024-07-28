@@ -208,23 +208,3 @@ button:hover {
     font-size: 1.2em;
     margin: 20px 0;
 }
-
-.thank-you button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.thank-you button:hover {
-    background-color: #45a049; /* Darker green */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
