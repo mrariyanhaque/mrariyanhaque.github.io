@@ -68,12 +68,12 @@ footer {
 
 /* Additional Styles for a More Professional Look */
 
-h1, {
+h1, h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: white;
 }
-h2,{
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+h2 {
     color: #4CAF50; /* Green */
 }
 
