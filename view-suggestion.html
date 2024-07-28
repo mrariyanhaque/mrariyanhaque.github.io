@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>View Suggestions</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">My Works</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Suggestions</h2>
+            <div id="suggestions"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ariyan Haque. All rights reserved.</p>
+    </footer>
+
+    <script>
+        async function fetchSuggestions() {
+            const response = await fetch('/view-suggestions');
+            const suggestions = await response.json();
+            const suggestionsDiv = document.getElementById('suggestions');
+
+            suggestions.forEach(suggestion => {
+                const suggestionDiv = document.createElement('div');
+                suggestionDiv.className = 'card';
+                suggestionDiv.innerHTML = `
+                    <h3>${suggestion.name}</h3>
+                    <p>Email: ${suggestion.email}</p>
+                    <p>${suggestion.suggestion}</p>
+                `;
+                suggestionsDiv.appendChild(suggestionDiv);
+            });
+        }
+
+        fetchSuggestions();
+    </script>
+</body>
+</html>
