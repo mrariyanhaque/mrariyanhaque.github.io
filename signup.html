@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
-<script>
+    <script>
         function handleFormSubmit(event) {
             event.preventDefault();
-            window.location.href = "signup-success.html';
+            window.location.href = 'thanks.html';
         }
     </script>
 </head>
@@ -16,32 +16,22 @@
     <header>
         <h1>Sign Up</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
     <main>
-        <section class="card">
+        <section class="signup">
             <h2>Create Your Account</h2>
-            <form action="signup-success.html" method="post">
-                <div class="form-group">
+            <form onsubmit="handleFormSubmit(event)">
+                <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
                 </div>
-                <br>
-                <div class="form-group">
-                    <label for="email">   Email</label>
+                <div class="input-group">
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <br>
-                <div class="form-group">
+                <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <br>
                 <button type="submit">Sign Up</button>
             </form>
         </section>
