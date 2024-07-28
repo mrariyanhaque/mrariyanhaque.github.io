@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -14,12 +15,17 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white; /* Change heading color to white */
+}
+
 nav {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: -20px;
 }
 
 nav ul {
@@ -38,7 +44,6 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -55,8 +60,37 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main section {
-    margin-bottom: 20px;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -67,9 +101,31 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Additional Styles for a More Professional Look */
+
 h1, h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: white;
+    color: #4CAF50; /* Green */
 }
 
 a {
@@ -106,13 +162,13 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #45a049; /* Darker green */
 }
 
+/* Card Styles */
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -131,63 +187,24 @@ button:hover {
     color: #666;
 }
 
-/* Form Styles */
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 /* Thank You Page Styles */
-.thank-you-page {
+.thank-you {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
-.thank-you-page h1 {
-    font-size: 2.5em;
-    color: #4CAF50;
+.thank-you-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
-.thank-you-page p {
+.thank-you h2 {
+    color: #4CAF50; /* Green */
+}
+
+.thank-you p {
     font-size: 1.2em;
-}
-
-.thank-you-page a.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.thank-you-page a.button:hover {
-    background-color: #45a049;
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .form-group input {
-        width: 100%;
-    }
+    margin: 20px 0;
 }
