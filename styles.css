@@ -99,7 +99,7 @@ nav ul li a {
 }
 
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: #006400; /* Dark Green */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -113,7 +113,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #004d00; /* Darker green */
 }
 
 .card {
