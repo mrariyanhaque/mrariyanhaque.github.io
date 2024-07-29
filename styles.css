@@ -1,104 +1,100 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    background-color: #333;
+    color: white;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    background: #000;
-    padding: 0.5rem 1rem;
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+    padding: 10px 20px;
+    display: block;
 }
 
 nav ul li a:hover {
-    background: #444;
+    background-color: #444;
 }
 
 main {
-    padding: 2rem;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
-.profile-img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-}
-
-.buttons .button {
-    background: #333;
-    color: #fff;
-    padding: 0.5rem;
-    text-align: center;
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
     text-decoration: none;
-    margin-bottom: 10px;
+    color: white;
+    background-color: #333;
     border-radius: 5px;
-    transition: box-shadow 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.buttons .button:hover {
-    box-shadow: 0 0 10px #39ff14; /* Neon green color */
+.button:hover {
+    background-color: #0ff;
+    color: #000;
 }
 
-.footer {
-    background: #333;
-    color: #fff;
+/* Thank You page styles */
+.thank-you {
+    background-color: #dff0d8;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
 
-.thank-you-page {
-    background: #e0f7e0; /* Light green background */
-    color: #333; /* Dark text color */
-    padding: 2rem;
-}
-
-.working-on-it-page {
-    background: #ffe0e0; /* Light red background */
-    color: #333; /* Dark text color */
-    padding: 2rem;
-}
-
-.thank-you-image, .working-image {
-    width: 100%;
-    max-width: 500px;
+.thank-you-image {
+    max-width: 200px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+}
+
+.thank-you h2, .thank-you p {
+    color: #3c763d;
+}
+
+/* Working On It page styles */
+.card {
+    background-color: #f2dede;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card h2, .card p {
+    color: #a94442;
 }
