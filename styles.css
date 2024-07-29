@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -37,6 +38,7 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     color: white;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
@@ -65,18 +67,32 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional Styles for a More Professional Look */
-
+/* Headings */
 h1 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: white; /* Change h1 color to white */
+    font-size: 2.5em;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     color: #4CAF50; /* Green */
+    font-size: 2em;
 }
 
+h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+/* Links */
 a {
     color: #4CAF50; /* Green */
     text-decoration: none;
@@ -86,19 +102,7 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
-    line-height: 1.6;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul li a {
-    transition: background-color 0.3s, color 0.3s;
-}
-
+/* Buttons */
 button {
     background-color: #006400; /* Dark Green */
     color: white;
@@ -111,10 +115,16 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #004d00; /* Darker green */
+}
+
+.button-large {
+    padding: 15px 30px;
+    font-size: 18px;
 }
 
 .card {
@@ -126,16 +136,11 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
-    margin-top: 0;
-    color: #333;
-}
-
 .card p {
     color: #666;
 }
 
-/* Style for the Sign Up form */
+/* Sign Up Form */
 .signup-form {
     background-color: white;
     padding: 20px;
@@ -162,6 +167,7 @@ button:hover {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 .signup-form button {
@@ -172,29 +178,21 @@ button:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .signup-form button:hover {
     background-color: #004d00; /* Darker green */
 }
 
-/* Additional Button Styles */
-button.primary {
-    background-color: #4CAF50; /* Green */
-}
-
-button.primary:hover {
-    background-color: #45a049; /* Darker green */
-}
-
-/* Image Styling */
+/* Profile Image */
 img.profile {
     border-radius: 50%;
     max-width: 150px;
     height: auto;
 }
 
-/* Styles for thank you page */
+/* Thank You Page */
 .thankyou-page {
     text-align: center;
     padding: 50px;
@@ -207,4 +205,21 @@ img.profile {
 
 .thankyou-page p {
     font-size: 1.2em;
+}
+
+/* Attractive Yes/No Links */
+a.yes-button, a.no-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+a.yes-button:hover, a.no-button:hover {
+    background-color: #45a049; /* Darker green */
 }
