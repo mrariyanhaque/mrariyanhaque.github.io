@@ -98,3 +98,8 @@ section {
 .card h2, .card p {
     color: #a94442;
 }
+.thank-you-image {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
