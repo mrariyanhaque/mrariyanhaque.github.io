@@ -30,7 +30,15 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
+    background: #000;
+    padding: 0.5rem 1rem;
     text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #444;
 }
 
 main {
@@ -59,6 +67,11 @@ section {
     text-decoration: none;
     margin-bottom: 10px;
     border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.buttons .button:hover {
+    box-shadow: 0 0 10px #39ff14; /* Neon green color */
 }
 
 .footer {
@@ -69,6 +82,18 @@ section {
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+.thank-you-page {
+    background: #e0f7e0; /* Light green background */
+    color: #333; /* Dark text color */
+    padding: 2rem;
+}
+
+.working-on-it-page {
+    background: #ffe0e0; /* Light red background */
+    color: #333; /* Dark text color */
+    padding: 2rem;
 }
 
 .thank-you-image, .working-image {
