@@ -13,6 +13,8 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav {
@@ -20,6 +22,8 @@ nav {
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -48,11 +52,13 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 800px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 main section {
@@ -65,12 +71,14 @@ footer {
     text-align: center;
     padding: 10px 20px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Headings */
 h1 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: white; /* Change h1 color to white */
+    color: white;
     font-size: 2.5em;
     margin: 0;
 }
@@ -222,4 +230,20 @@ a.yes-button, a.no-button {
 
 a.yes-button:hover, a.no-button:hover {
     background-color: #45a049; /* Darker green */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, nav, main, footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
 }
