@@ -98,3 +98,19 @@ section {
 .card h2, .card p {
     color: #a94442;
 }
+/* Profile section styles */
+.profile-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-image {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
