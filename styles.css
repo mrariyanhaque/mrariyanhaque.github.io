@@ -89,21 +89,13 @@ main {
     font-family: 'Arial', sans-serif; /* Optional: use a professional font */
 }
 
-/* Glowing text effect */
-.glowing-text {
-    font-size: 2em; /* Adjust font size as needed */
-    text-shadow: 
-        0 0 5px rgba(255, 255, 255, 0.7),
-        0 0 10px rgba(255, 255, 255, 0.5),
-        0 0 15px rgba(255, 255, 255, 0.3);
-}
 
 /* Specific background styles */
 .profile-background {
     background-image: url('b5d65521-c32b-4c37-995c-d61505e3050d.jpeg'); /* Path to the profile image */
 }
 
-.profile-background-1 {
+.27-08-2024 {
     background-image: url('IMG_3742.jpeg'); /* Path to the profile image */
 }
 
