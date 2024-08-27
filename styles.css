@@ -55,6 +55,19 @@ main {
     margin: 20px 0;
 }
 
+
+.profile-image {
+    max-width: 200px; /* Increased size */
+    width: 100%; /* Ensure it scales */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
 /* Profile background */
 .profile-background {
     background-image: url('b5d65521-c32b-4c37-995c-d61505e3050d.jpeg'); /* Path to the profile image */
