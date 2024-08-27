@@ -126,7 +126,7 @@ article h3 {
     margin: 10px 0;
     text-decoration: none;
     color: white;
-    background-color: #333;
+    background-color: black;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
