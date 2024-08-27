@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,10 +37,6 @@ nav ul li a:hover {
     background-color: #444;
 }
 
-main {
-    padding: 20px;
-}
-
 footer {
     text-align: center;
     padding: 10px 0;
@@ -47,8 +44,9 @@ footer {
     color: white;
 }
 
-section {
-    margin-bottom: 20px;
+/* Main content area */
+main {
+    padding: 20px;
 }
 
 /* Profile section styles */
@@ -57,20 +55,51 @@ section {
     margin: 20px 0;
 }
 
-.profile-image {
-    max-width: 200px; /* Increased size */
-    width: 100%; /* Ensure it scales */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+/* Profile background */
+.profile-background {
+    background-image: url('b5d65521-c32b-4c37-995c-d61505e3050d.jpeg'); /* Path to the profile image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.profile-background-1 {
+    background-image: url('IMG_1699.jpeg'); /* Path to the profile image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
-.profile-details {
-    margin-top: 20px;
+.profile-details h2, .profile-details p {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Button styles */
+/* Blog posts */
+article {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for blog posts */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -85,40 +114,4 @@ section {
 .button:hover {
     background-color: #0ff;
     color: #000;
-}
-
-/* Thank You page styles */
-.thank-you {
-    background-color: #dff0d8;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.thank-you-image {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-.thank-you h2, .thank-you p {
-    color: #3c763d;
-}
-
-/* Working On It page styles */
-.card {
-    background-color: #f2dede;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.card h2, .card p {
-    color: #a94442;
-}
-
-.working-image {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto 20px auto;
 }
