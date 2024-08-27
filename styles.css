@@ -48,13 +48,11 @@ footer {
 main {
     padding: 20px;
 }
-
 /* Profile section styles */
-.profile-section {
+.profile-section-1 {
     text-align: center;
     margin: 20px 0;
 }
-
 
 .profile-image {
     max-width: 200px; /* Increased size */
@@ -68,6 +66,15 @@ main {
 .profile-details {
     margin-top: 20px;
 }
+
+/* Profile section styles */
+.profile-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
 /* Profile background */
 .profile-background {
     background-image: url('b5d65521-c32b-4c37-995c-d61505e3050d.jpeg'); /* Path to the profile image */
